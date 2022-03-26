@@ -44,7 +44,7 @@ function Postanswerform({question}){
   });
   const history=useHistory();
   const editanswer = (updatedanswer)=>{
-  fetch(`${API}/${id}`,{
+  fetch(`${API}/questions/${id}`,{
     method:"PUT", 
     body: JSON.stringify(updatedanswer),
      headers:{
