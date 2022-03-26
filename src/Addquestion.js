@@ -25,7 +25,7 @@ export function Addquestion() {
   const his=useHistory();
  const addquestion = (newquestion) => {
 console.log("onSubmit",newquestion)
-    fetch(`${API}`,{
+    fetch(`${API}/questions`,{
       method:"POST", 
       body: JSON.stringify([newquestion]),
        headers:{
